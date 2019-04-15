@@ -1,9 +1,10 @@
 body {
-    background-image: url("../img/background-container.png");
-    background-repeat: no-repeat;
+    background: linear-gradient( rgba(255, 255, 255, 0), rgba(0, 0, 0, 1) ), url("../img/background.png") no-repeat;
+    background-size: cover;/*Масштабирует изображение с сохранением пропорций*/
     margin: 0 auto;
 }
 .container {
+
     margin: 0 auto;
     width: 1059px;
 }
@@ -15,12 +16,19 @@ body {
     float: left;
 }
 .header-logo-image {
-    float: left;
-    margin-right: 15px;
-    width: 46px;
+    display: inline-block;
+    width: 165px;
 }
-.header-logo:hover .logo-img-white{
-    background: url("../img/logo-img.png");
+
+.logo-img-white{
+    float: left;
+    background: url("../img/logo-img-white.png");
+    display: block;
+    width: 46px;
+    height: 44px;
+}
+.logo-img-white:hover {
+    background-image: url("../img/logo-img.png");
 }
 .header-logo-text {
     float: left;
@@ -28,11 +36,19 @@ body {
     font-family: sans-serif;
     color: #ffffff;
 }
-.header-logo:hover .header-logo-text {
+.header-logo-image:hover .logo-text {
     color:#f26522;
 }
 .logo-text {
+    float: right;
+    display: block;
+    text-align: center;
     font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    width: 104px;
+    
+
 }
 .logo-text-milan {
     font-size: 29px;
@@ -58,6 +74,9 @@ body {
    text-align: center;
    margin-bottom: 58px;
 }
+.content-link {
+
+}
 .content-img:nth-child(3n){
     float: right;
 }
@@ -71,8 +90,10 @@ body {
     width: 305px;
     height: 198px;
     border: 3px solid transparent;
+    box-sizing: border-box;
     border-image: linear-gradient(to top, black 0%, #ffffff 100%);
     border-image-slice: 1;
+
 }
 .content-text{
     display: inline-block;
@@ -81,7 +102,7 @@ body {
     color: #ffffff;
     margin-top: 22px;
 }
-.content-text:hover {
+.content-link:hover .content-text {
     color: #f26522;
     margin-top: 20px;
 }
@@ -91,7 +112,7 @@ body {
 .content-up {
    position: absolute;
    top: 143px;
-    width: 310px;
+    width: 306px;
     font-family: sans-serif;
     color: #ffffff;
     background-color: #f26522;
@@ -116,6 +137,12 @@ body {
     float: right;
     padding-right: 40px;
 }
+.content-up::after.details {
+    border: 1px solid #ffffff;
+}
+.content-icon {
+    padding-left: 15px;
+}
 .clearfix::after {
     content: '';
     clear: both;
@@ -130,3 +157,4 @@ body {
     color:#ffffff;
     text-align: center;
 }
+
