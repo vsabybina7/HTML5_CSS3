@@ -9,8 +9,9 @@ body {
     width: 1059px;
 }
 .header {
-    height: 80px;
-    padding-top: 49px;
+    height: 44px;
+    margin-top: 49px;
+    margin-bottom: 36px;
 }
 .header-logo {
     float: left;
@@ -27,7 +28,7 @@ body {
     width: 46px;
     height: 44px;
 }
-.logo-img-white:hover {
+.logo-img-white:hover{
     background-image: url("../img/logo-img.png");
 }
 .header-logo-text {
@@ -35,9 +36,6 @@ body {
     width: 105px;
     font-family: sans-serif;
     color: #ffffff;
-}
-.header-logo-image:hover .logo-text {
-    color:#f26522;
 }
 .logo-text {
     float: right;
@@ -47,11 +45,15 @@ body {
     font-weight: bold;
     color: #ffffff;
     width: 104px;
-    
-
 }
+.header-logo:hover .logo-text {
+     color:#f26522;
+ }
 .logo-text-milan {
     font-size: 29px;
+}
+.logo-text-holidays{
+    letter-spacing: 0.5px;
 }
 .header-contacts {
     float: right;
