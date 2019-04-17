@@ -28,7 +28,7 @@ body {
     width: 46px;
     height: 44px;
 }
-.logo-img-white:hover{
+.header-logo:hover .logo-img-white{
     background-image: url("../img/logo-img.png");
 }
 .header-logo-text {
